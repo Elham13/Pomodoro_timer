@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css" />
+   <title>Count Down</title>
+</head>
+<body>
+   <h1>Pomodoro Timer</h1>
+   <div class="clock">
+      <div class="mins">0</div>
+      <div>:</div>
+      <div class="secs">00</div>
+      <audio src="./alarm.mp3"></audio>
+      <svg class="progress-ring" height="120" width="120">
+         <circle 
+            class="progress-ring_circle" 
+            stroke-width="4"
+            fill="transparent"
+            r="50"
+            cx="60"
+            cy="60"
+         />
+      </svg>
+   </div>
+
+   <div class="btn-group">
+      <button class="start">Start Work</button>
+      <button class="reset">Reset</button>
+      <button class="pause">Pause</button>
+   </div>
+
+   <form>
+      <lable>Set Focus time</lable>
+      <input type="number" id="focusTime" required/>
+      <lable>Set Break time</lable>
+      <input type="number" id="breakTime" required/>
+      <button type="submit">Save Settings</button>
+   </form>
+
+   <script src="main.js"></script>
+</body>
+</html>
